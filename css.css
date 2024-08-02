@@ -1,0 +1,519 @@
+* {
+    --clr-primary: #fcfcfc;
+    --clr-dark: #05204a;
+    --clr-light: #457eac;
+    --clr-accent: #f08080;  
+}
+
+body {
+
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background: #FCFCFC;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+
+}
+
+header > div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 6%;
+    text-transform: uppercase;
+}
+
+
+header > div > div > h3 {
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    color: var(--clr-light);
+}
+
+header > div > div > h1 {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: #05204A;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+
+header > div > div > button {
+    background-color: var(--clr-light);
+    color: var(--clr-primary);
+    border-radius: 5px;
+    /* put the svg and text on the same line */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    /* Center the button */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+header > div > div > button:hover {
+    background-color: var(--clr-accent);
+    cursor: pointer;
+}
+
+
+
+header > div > div > button > svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    fill: var(--clr-primary);
+}
+
+#Invert {
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);
+    text-shadow: 
+      4px 4px 0px var(--clr-light), 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+#Logo {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#FirstSection {
+    background-color: var(--clr-dark);
+}
+
+#FirstSection > h3 {
+    font-weight: 200;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#FirstSection > h2 {
+    text-transform: uppercase;
+    padding-top: 0;
+    margin-top: 0;
+    /* Make the text italic */
+    font-style: italic;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+#OurValues > h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#ValuesList {
+    list-style: none;
+
+}
+
+#ValuesList > li {
+    margin-bottom: 20px;
+}
+
+
+#ValuesList > li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+#ValuesList > li > svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--clr-accent);
+    margin-right: 10px;
+}
+
+.TwoColumns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#SecondSection {
+    background-color: var(--clr-primary);
+    color: var(--clr-dark);
+}
+
+#SecondSection > .TripleCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#SecondSection > div > h3 {
+    font-weight: 200;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#SecondSection > div > h2 {
+    text-transform: uppercase;
+    padding-top: 0;
+    margin-top: 0;
+    /* Make the text italic */
+    font-style: italic;
+    font-weight: 600;
+    font-size: 3em;
+    color: #2c2c2c;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.TripleCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TripleCard > div {
+    padding: 1%;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.1);
+    width: 30%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    /* Make the image central but the text on the left */
+    text-align: left;
+    height: 60vh;
+}
+
+.TripleCard > div > img {
+    width: 400px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.TripleCard > div:hover,
+.TripleCard > div:focus {
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+#ThirdSection {
+    background-color: var(--clr-accent);
+    height: auto;
+    padding: 5%;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--clr-primary);
+}
+
+#ThirdSection > div > h3 {
+    font-weight: 200;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#ThirdSection > div > h2 {
+    text-transform: uppercase;
+    padding-top: 0;
+    margin-top: 0;
+    /* Make the text italic */
+    font-style: italic;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+#ThirdSection > div > div > h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#OneOffServicesList {
+    list-style: none;
+}
+
+#OneOffServicesList > li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+#OneOffServicesList > li > div {
+   width: 50%;
+}
+
+#OneOffServicesList > li > div > h5 {
+   margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 2em;
+}
+
+#OneOffServicesList > li > div > p {
+    margin-top: 0;
+     padding-top: 0;
+ }
+
+
+ #SubscriptionPlans > div {
+    padding: 1%;
+}
+
+#SubscriptionPlans > div > h6 {
+    font-weight: 200;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 4em;
+    text-align: left;
+    font-style: italic;
+}
+
+#SubscriptionPlans > div > h5 {
+    font-weight: 600;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 4em;
+    text-align: right;
+}
+
+#monthSpan {
+    font-style: italic;
+}
+
+
+#FourthSection {
+    background-color: var(--clr-primary);
+    color: var(--clr-dark);
+    padding: 1%;
+}
+
+#FourthSection > div > h3 {
+    font-weight: 200;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+#FourthSection > div > h2 {
+    text-transform: uppercase;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 3em;
+    color: #2c2c2c;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+      text-align: center;
+}
+
+
+#ContactUsButton {
+    background-color: var(--clr-light);
+    color: var(--clr-primary);
+    border-radius: 10px;
+    /* put the svg and text on the same line */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    /* Center the button */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+#ContactUsButton:hover {
+    background-color: var(--clr-accent);
+    cursor: pointer;
+}
+
+
+#ContactUsButton > svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    fill: var(--clr-primary);
+    margin-left: 10px;
+}
+
+
+
+
+.StandardSection {
+    height: 75vh;
+    padding: 5%;
+}
+
+
+
+.TwoColumns > div {
+    width: 45%;
+}
+
+footer {
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);
+    text-align: center;
+    padding: 20px;
+}
+
+.line {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: dropIn 0.2s forwards;
+}
+
+@keyframes dropIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.line:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.line:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+.line:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+
+/* Base CSS remains the same */
+
+/* Media Queries */
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100%
+    };
+    header {
+        padding-top: 20%;
+    }
+
+    header > div {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    header > div > div > h1 {
+        font-size: 2.75em;
+    }
+
+    header > div > div > button {
+        width: 100%;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .TwoColumns, .TripleCard {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .TripleCard > div {
+        width: 100%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .TripleCard > div > img {
+        width: 100%;
+        height: auto;
+    }
+
+    #Logo {
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    #FirstSection > h2, #SecondSection > div > h2, #ThirdSection > div > h2 {
+        font-size: 2em;
+    }
+
+    #FirstSection > h3, #SecondSection > div > h3, #ThirdSection > div > h3 {
+        font-size: 1em;
+    }
+
+    #OurValues > h4, #ThirdSection > div > div > h4 {
+        font-size: 1.2em;
+    }
+
+    #OneOffServicesList > li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #OneOffServicesList > li > div {
+        width: 100%;
+    }
+
+    #SubscriptionPlans > div > h6, #SubscriptionPlans > div > h5 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .StandardSection {
+        height: auto;
+        padding: 10%;
+    }
+
+    .TwoColumns > div {
+        width: 100%;
+    }
+}
+
